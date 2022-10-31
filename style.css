@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Mochiy+Pop+P+One&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Fraunces:opsz,wght@9..144,700&family=Karla:wght@400;700&family=Mochiy+Pop+P+One&family=Montserrat:wght@500;700&display=swap');
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2ebe3;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+    display:flex;
+    border-radius: 10px;
+    width: calc(100% - 40px);
+    max-width: 700px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 345px;
+    background-color: #fff;
+    padding: 35px;
+}
+img {
+    max-width: 100%;
+    display: inherit;
+}
+
+.product {
+    letter-spacing: 2px;
+    font-family: "Montserrat";
+    font-size: 13px;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-family: "Fraunces";
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-family: "Montserrat";
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "Fraunces";   
+}
+
+.new-price {
+    color: #3c8067;
+    font-size: 2.4rem;
+}
+
+.old-price {
+    opacity: 0.6;
+    margin-left: 20px;
+}
+button img {
+    width: 7%;
+    margin-right:10px;
+}
+button {
+    font-family:"Montserrat";
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c8067;
+    color: #fff;
+    border:none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4a997c;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        
+        flex-direction: column;
+    }
+    img {
+        max-height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .right-section {
+        max-width: 100%;
+    }
+
+    button img {
+        width:4%;
+    }
+}
